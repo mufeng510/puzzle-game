@@ -34,6 +34,7 @@ body {
 }
 .container .main-container .setting-container {
   height: 60px;
+  line-height: 60px;
   width: 100%;
   text-align: center;
 }
@@ -43,4 +44,68 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mask {
+  background-color: #ccc;
+  opacity: 0.7;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+.tip-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+}
+.tip-container .tip-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tip-container .tip-box .tip-background {
+  width: 300px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+}
+.tip-container .tip-box .tip-background .tip-title {
+  color: #f34545;
+  font-size: 24px;
+}
+.tip-container .tip-box .tip-background .tip-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.tip-container .tip-box .tip-background .btn-container {
+  padding: 20px;
+}
+.tip-page {
+  display: none;
+}
+.btn {
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  color: #2486FF;
+  border: 1px solid #2486FF;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #5DA5FF;
+  border: 1px solid #5DA5FF;
 }

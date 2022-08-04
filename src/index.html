@@ -14,10 +14,34 @@
         <div class="main-container">
             <div class="image-container" id="canvasContainer"></div>
             <div class="setting-container">
-                难度选择
+                <span>难度选择：</span>
+                <select id="yNumber">
+                    <option value="3">3</option>
+                    <option value="4" selected>4</option>
+                    <option value="5">5</option>
+                </select>
+                <span>行</span>
+                <select id="xNumber">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <span>列</span>
             </div>
             <div class="btn-container">
-                <button type="button" class="btn">开始</button>
+                <button type="button" class="btn" id="startBtn">重新开始</button>
+            </div>
+        </div>
+    </div>
+    <div class="mask tip-page"></div>
+    <div class="tip-container tip-page">
+        <div class="tip-box">
+            <div class="tip-background">
+                <div class="tip-title">提示</div>
+                <div class="tip-content">拼图完成^_^</div>
+                <div class="btn-container">
+                    <button type="button" class="btn" id="okBtn">确定</button>
+                </div>
             </div>
         </div>
     </div>
